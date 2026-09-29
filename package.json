@@ -1,0 +1,20 @@
+{
+  "name": "horizen-docs-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Stdio MCP server for the Horizen documentation site.",
+  "bin": {
+    "horizen-docs-mcp": "./src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "files": [
+    "src/",
+    "horizen-documentation-toolset.mci.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4"
+  }
+}

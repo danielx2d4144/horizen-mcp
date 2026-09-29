@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "horizen-docs": {
+      "type": "stdio",
+      "command": "npm",
+      "cwd": "${workspaceFolder}",
+      "args": ["start"]
+    }
+  }
+}

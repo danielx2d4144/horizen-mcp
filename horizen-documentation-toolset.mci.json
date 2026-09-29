@@ -1,0 +1,730 @@
+{
+  "schemaVersion": "1.0",
+  "metadata": {
+    "name": "Horizen Documentation Toolset",
+    "description": "Read-only tools for fetching the official Horizen documentation pages.",
+    "version": "1.0.0"
+  },
+  "tools": [
+    {
+      "name": "horizen_home",
+      "annotations": {
+        "title": "Horizen Overview",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the Horizen overview page and use it as the entry point to the documentation site.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_about",
+      "annotations": {
+        "title": "About",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the governance About page and learn the purpose and structure of Horizen governance.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/overview/about",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_communication_channels",
+      "annotations": {
+        "title": "Communication Channels",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the governance communication channels page and see where governance discussion happens.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/overview/communication_channels",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_constitution",
+      "annotations": {
+        "title": "Constitution",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the governance constitution page and review the rules that govern the process.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/overview/constitution",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_guiding_values",
+      "annotations": {
+        "title": "Guiding Values",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the guiding values page and review the principles that shape governance decisions.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/overview/guiding_values",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_proposal_categories",
+      "annotations": {
+        "title": "Proposal Categories",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the proposal categories page and see the kinds of proposals accepted by governance.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/proposal_categories",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_foundational_documents",
+      "annotations": {
+        "title": "Foundational Documents",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the foundational documents page and review the main reference materials for governance.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/reference/foundational_docs",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_join_discussion",
+      "annotations": {
+        "title": "Join the Discussion",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the join discussion page and learn how to participate in governance conversations.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/reference/join_discussion",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_submit_or_vote_on_proposal",
+      "annotations": {
+        "title": "Submit or Vote on a Proposal",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the proposal submission and voting page and review the full participation flow.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/reference/submit_vote",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_quick_voting_guide",
+      "annotations": {
+        "title": "Quick Voting Guide",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the quick voting guide and use it for the shortest path to participating in a vote.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/voting_process/quick_voting_guide",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_governance_voting_process",
+      "annotations": {
+        "title": "Voting Process",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the full voting process page and review the governance voting workflow from start to finish.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/governance/voting_process/voting_process",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_horizen_hub",
+      "annotations": {
+        "title": "Horizen Hub",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the Horizen Hub landing page and use it as an ecosystem navigation entry point.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/horizen_hub",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_claim_page",
+      "annotations": {
+        "title": "Step 2: Submit the Claim",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the claim submission page for the mainnet migration and follow the second step of the flow.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/claim-page",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_cli_tool",
+      "annotations": {
+        "title": "Super Users - CLI Tool",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the CLI tool page for advanced claim workflows intended for super users.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/cli",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_create_signature",
+      "annotations": {
+        "title": "Step 1: Create a Signature",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the signature creation page and follow the first step of the mainnet migration claim flow.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/create-a-signature",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_faq",
+      "annotations": {
+        "title": "Troubleshooting & FAQ",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the migration FAQ and troubleshooting page to resolve common claim issues.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/faq",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_ledger_wallet_users",
+      "annotations": {
+        "title": "Ledger Wallet Users",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the Ledger wallet instructions for users claiming through hardware wallets.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/ledger-wallet-users",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_mainnet_claim",
+      "annotations": {
+        "title": "Start Here - Prerequisites",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the prerequisites page and use it as the starting point for the mainnet claim process.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/mainnet-claim",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_other_wallet_users",
+      "annotations": {
+        "title": "Other Wallet Users",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the wallet instructions for users who are not using Ledger or Sphere wallets.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/other-wallet-users",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_security_and_audits",
+      "annotations": {
+        "title": "Security and Audits",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the security and audit page for the mainnet migration process.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/security-and-audit",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_mainnet_migration_sphere_wallet_users",
+      "annotations": {
+        "title": "Sphere Wallet Users",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the Sphere wallet instructions for users claiming through Sphere wallets.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/mainnet-migration-instructions/sphere-wallet-users",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_claiming_zen",
+      "annotations": {
+        "title": "Claiming mainchain ZEN",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the mainchain ZEN claiming page and review the legacy claim flow.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/claiming-zen",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_data_loading",
+      "annotations": {
+        "title": "Data loading",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the data loading page and learn how migration data is imported into the restore pipeline.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/data-loading",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_dump_execution",
+      "annotations": {
+        "title": "Dump execution",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the dump execution page and understand how the historical chain dumps are produced.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/dump-execution",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_migration_check",
+      "annotations": {
+        "title": "Migration check",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the migration check page and review how third parties verify the migration data.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/migration-check",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_migration_start",
+      "annotations": {
+        "title": "Migration starting points",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the migration starting points page and review the entry points for the migration workflow.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/migration-start",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_migration_tools",
+      "annotations": {
+        "title": "Tools for Claiming Process",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the migration tools page and review the utilities used during the claiming process.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/migration-tools",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_overview",
+      "annotations": {
+        "title": "Migration overview",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the migration overview page and review the overall migration process from old chains to Base.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/overview",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_preparing_old_chain_nodes",
+      "annotations": {
+        "title": "Preparing old chain nodes",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the old chain preparation page and review the node setup needed before migration.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/preparing-old-chain-nodes",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_migration_smart_contracts",
+      "annotations": {
+        "title": "Smart contracts",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the smart contracts page and review the contracts used to support the migration.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/migration/smart-contracts",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_architecture",
+      "annotations": {
+        "title": "Architecture",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the architecture page and review the Horizen rollup stack, from sequencer to settlement.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/architecture",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_deploy_a_contract",
+      "annotations": {
+        "title": "Deploy a contract",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the contract deployment page and review how to deploy smart contracts on Horizen.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/deploy-contract",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_subgraph_indexing",
+      "annotations": {
+        "title": "Subgraph Indexing",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the subgraph indexing page and review how Goldsky is used to index Horizen data.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/goldsky",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_multisig_wallets",
+      "annotations": {
+        "title": "Multisig Wallets",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the multisig wallets page and review how multisig accounts are used in the ecosystem.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/multisig",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_rpc_configuration",
+      "annotations": {
+        "title": "RPC Configuration",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the RPC configuration page and review network endpoint setup for Horizen clients.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/rpc",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_oracle",
+      "annotations": {
+        "title": "Oracle",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the oracle page and review the Stork oracle integration used by Horizen.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/stork-oracle",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_overview_tokens",
+      "annotations": {
+        "title": "Tokens",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the tokens page and review the token information exposed in the Horizen docs.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/overview/token",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_transparency_report",
+      "annotations": {
+        "title": "Transparency Report",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the transparency report page and review the public reporting materials.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/transparency",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_vela_introduction",
+      "annotations": {
+        "title": "VELA",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the VELA introduction page and review the VELA section of the docs.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/vela/introduction",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    },
+    {
+      "name": "horizen_zenrise_terms_and_conditions",
+      "annotations": {
+        "title": "Zenrise Loyalty Program Terms of Use",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "description": "Fetch the Zenrise terms page and review the loyalty program terms of use.",
+      "execution": {
+        "type": "http",
+        "method": "GET",
+        "url": "https://docs.horizen.io/zenrise/terms-and-conditions",
+        "headers": {
+          "Accept": "text/html"
+        }
+      }
+    }
+  ]
+}
